@@ -41,50 +41,63 @@ export default function Portfolio() {
 
   const experiences = [
     {
-      period: "2024 — Present",
-      title: "Senior Front-End Engineer",
-      company: "Klaviyo",
-      description: "Build and maintain critical components used to construct Klaviyo's frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.",
-      tags: ["JavaScript", "TypeScript", "React", "Storybook"]
+      period: "2025 Apr — Present",
+      title: "Intern Software Engineer",
+      company: "One Billion Technology",
+      description: "Working on microservices-based application using Spring Boot and React.js, improving system scalability and maintainability",
+      tags: ["Spring Boot", "React", "MongoDB", "AWS","Microservices", "Bitbucket", "Jira", "Postman"]
     },
     {
-      period: "2018 — 2024",
-      title: "Lead Engineer",
-      company: "Upstatement",
-      description: "Build, style, and ship high-quality websites, design systems, mobile apps, and digital experiences for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more.",
-      tags: ["JavaScript", "TypeScript", "React", "Next.js", "React Native", "WordPress", "Node.js"]
-    },
-    // {
-    //   period: "July — Dec 2017",
-    //   title: "UI Engineer",
-    //   company: "Apple Music",
-    //   description: "Developed and styled interactive web apps for Apple Music, including the user interface of Apple Music's embeddable web player widget for in-browser user authorization and full song playback.",
-    //   tags: ["Ember", "SCSS", "JavaScript", "MusicKit.js"]
-    // }
+      period: "2024 Feb — 2024 Oct",
+      title: "Intern Software Engineer",
+      company: "Softmint Software Solutions",
+      description: "Optimized SQL queries and improved database performance. Specialized in creating scalable and secure backend services using Laravel, focusing on database management and API integration.",
+      tags: ["Laravel", "React", "MySql", "WordPress", "Node.js", "Github", "Digital Ocean", "CPanel"]
+    }
   ];
 
   const projects = [
     {
-      title: "Build a Spotify Connected App",
-      description: "Video course that teaches how to build a web app with the Spotify Web API. Topics covered include the principles of REST APIs, user auth flows, Node, Express, React, Styled Components, and more.",
-      tags: ["React", "Node.js", "Express", "Spotify API"],
-      link: "#",
-      image: "/images/test.png"
+      title: "Coworking Space Booking web app (Millionspaces)",
+      description: "Contributed to the development of a web application for booking coworking spaces in Sri Lanka. Users can browse, book, and manage coworking space reservations with real-time availability and secure payments.",
+      tags: ["React", "Spring Boot", "MongoDB", "AWS"],
+      link: "https://millionspaces.com/Sri-Lanka",
+      image: "/images/millionspaces.png"
     },
     {
-      title: "Spotify Profile",
-      description: "Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track.",
-      tags: ["React", "Express", "Spotify API", "Heroku"],
+      title: "Stores Management System",
+      description: "Collaborated on the development of a comprehensive system to manage procurement, tenders, employees, and equipment across the country. The system streamlined operations by centralizing data, improving transparency, and ensuring efficient resource management for the department.",
+      tags: ["Laravel", "Filament", "MySQL", "Bootstrap"],
       link: "#",
-      image: "/images/test.png",
-      stats: "⭐ 697"
+      image: "/images/stores.jpg"
     },
     {
-      title: "Halcyon Theme",
-      description: "Minimal dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. 100k+ Installs",
-      tags: ["VS Code", "Theme", "Dark Mode"],
+      title: "Blockchain based e-voting system",
+      description: "My final year research focuses on ensuring secure voting and data integrity using homomorphic encryption for encrypted vote tabulation and blockchain for verifying vote integrity.",
+      tags: ["Next.js", "Ethereum", "Blockchain", "Solidity", "Homomorphic Encryption"],
       link: "#",
-      image: "/images/test.png"
+      image: "/images/voting.gif"
+    },
+    {
+      title: "Lecture notes based Chat bot",
+      description: "This chatbot is designed to answer questions based on lecture notes, making it a useful study companion. Used RAG with LangChain to connect an LLM with a document retrieval system. The bot pulls relevant info from course materials to give accurate answers - pretty handy for studying.",
+      tags: ["RAG", "LangChain", "LLM", "OpenAI"],
+      link: "#",
+      image: "/images/chatbot.jpg"
+    },
+    {
+      title: "Tour management system",
+      description: "Contributed to the development of a centralized admin panel for managing hotel, activity, and tour bookings, resulting in streamlined operations. Integrated the custom admin panel with the existing WordPress Advanced Database Structure, ensuring seamless data synchronization and comprehensive management capabilities for booking records.",
+      tags: ["WordPress", "Laravel", "JavaScript", "MySQL", "Digital Ocean"],
+      link: "#",
+      image: "/images/tour.jpg"
+    },
+    {
+      title: "Weather Forecast Web Application",
+      description: "A web application with provides current weather in a city and 7-day daily forecasting. It fetches real-time data from a weather API and displays it in a user-friendly interface, allowing users to plan their activities based on accurate weather information.",
+      tags: ["React", "Open Weather API"],
+      link: "https://github.com/malithJayasinghe2000/Weather-Forecast-web-Application",
+      image: "/images/weather.png"
     }
   ];
 
@@ -104,13 +117,13 @@ export default function Portfolio() {
           <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-                Your Name
+                Malith Jayasinghe
               </h1>
               <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-                Senior Front-End Engineer
+                Software Engineer
               </h2>
               <p className="mt-4 max-w-xs leading-normal">
-                I build accessible, pixel-perfect digital experiences for the web.
+                Transforming ideas into seamless digital experience.
               </p>
               
               {/* Navigation */}
@@ -171,14 +184,14 @@ export default function Portfolio() {
             {/* Social Links */}
             <ul className="ml-1 mt-8 flex items-center space-x-5">
               <li>
-                <a href="#" className="block hover:text-slate-200">
+                <a href="https://github.com/malithJayasinghe2000" className="block hover:text-slate-200">
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
                 </a>
               </li>
               <li>
-                <a href="#" className="block hover:text-slate-200">
+                <a href="https://www.linkedin.com/in/malithjayasinghe/" className="block hover:text-slate-200">
                   <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
@@ -196,13 +209,23 @@ export default function Portfolio() {
               </div>
               <div>
                 <p className="mb-4">
-                  I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development, creating experiences that not only look great but are meticulously built for performance and usability.
+                  As a recent graduate from SLIIT and a passionate Software Engineer,
                 </p>
                 <p className="mb-4">
-                  Currently, I'm a Senior Front-End Engineer at <a href="#" className="font-medium text-slate-200 hover:text-teal-300">Klaviyo</a>, specializing in accessibility. I contribute to the creation and maintenance of UI components that power Klaviyo's frontend, ensuring our platform meets web accessibility standards and best practices.
+                  My technical expertise is diverse, allowing me to adapt to different project needs. On the front-end, 
+                  I specialize in creating dynamic and responsive user interfaces using React.js and Next.js. 
+                  For the back-end, I have hands-on experience building robust APIs and server-side logic with Spring Boot, Node.js, and Laravel. I also have familiarity with cloud deployment and services using AWS.
+                </p>
+                <p className="mb-4">
+                  Beyond my core web development skills, 
+                  I am deeply enthusiastic about the fields of Artificial Intelligence and Machine Learning. 
+                  I am actively expanding my knowledge in Deep Learning models and data-driven solutions, 
+                  and I am eager to apply these skills to build more intelligent and predictive applications.
                 </p>
                 <p>
-                  In my spare time, I'm usually climbing, playing tennis, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds.
+                  I am a dedicated problem-solver and a quick learner, 
+                  always looking for opportunities to tackle complex challenges and contribute to innovative projects. 
+                  I'm currently seeking a role where I can leverage my full-stack capabilities while growing my passion for AI/ML.
                 </p>
               </div>
             </section>
@@ -218,10 +241,10 @@ export default function Portfolio() {
                     <li key={index} className="mb-12">
                       <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                         <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                        <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-4">
                           {exp.period}
                         </header>
-                        <div className="z-10 sm:col-span-6">
+                        <div className="z-10 sm:col-span-8">
                           <h3 className="font-medium leading-snug text-slate-200">
                             <a href="#" className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base">
                               <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
@@ -313,9 +336,9 @@ export default function Portfolio() {
                             </a>
                           </h3>
                           <p className="mt-2 text-sm leading-normal">{project.description}</p>
-                          {project.stats && (
+                          {/* {project.stats && (
                             <p className="mt-2 text-sm font-medium text-slate-400">{project.stats}</p>
-                          )}
+                          )} */}
                           <ul className="mt-2 flex flex-wrap">
                             {project.tags.map((tag, tagIndex) => (
                               <li key={tagIndex} className="mr-1.5 mt-2">
@@ -335,9 +358,9 @@ export default function Portfolio() {
 
             {/* Footer */}
             <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-              <p>
+              {/* <p>
                 Coded in <a href="#" className="font-medium text-slate-400 hover:text-teal-300">Visual Studio Code</a>. Built with <a href="#" className="font-medium text-slate-400 hover:text-teal-300">Next.js</a> and <a href="#" className="font-medium text-slate-400 hover:text-teal-300">Tailwind CSS</a>, deployed with <a href="#" className="font-medium text-slate-400 hover:text-teal-300">Vercel</a>.
-              </p>
+              </p> */}
             </footer>
           </main>
         </div>
